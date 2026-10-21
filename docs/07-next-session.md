@@ -27,8 +27,5 @@ file the game created.
 3. The controls: the Classic's mapping on the pad (attacks on the face
    buttons, guard and sub-weapon on the shoulders); the game's own button
    configuration first.
-4. Then publish: the repo `pc-castlevaniajudgment`, and the line in
-   wiikit's README port table (what it asked of wiikit: GX fog, the
-   NAND's answer to a directory read on a file; names by kin, if they
-   move into wiikit). Until then wiikit's commits call it "a stripped 2008
-   game".
+4. Published at the end of session 1 (github.com/vs-sr-dev/pc-castlevaniajudgment),
+   named in wiikit's README (ce8560e).

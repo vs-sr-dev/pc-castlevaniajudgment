@@ -2,7 +2,8 @@
 
 The port takes wiikit as a submodule at `wiikit/`, pinned first at d9d14c0, the
 other ports' commit, then at cbd441b, this session's fog and NAND fix
-(checked on the eight other ports).
+(checked on the eight other ports), then at ce8560e (its README names
+this port).
 
 The game boots, plays its movie, and reaches its menus on wiikit as it
 was. Its layer (`tools/cvj.cpp`) asks only for what wiikit already offers:

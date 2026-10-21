@@ -45,3 +45,5 @@ Results:
   KPAD's `dev_type`) from the first second to the end, the screen
   included. A reminder the game shows: a longplay of the console game
   (World of Longplays) shows it too, as the user saw.
+* **Published**: playable until proven otherwise. wiikit's README names
+  the port (ce8560e); the eight other ports moved to it.
