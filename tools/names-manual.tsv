@@ -1,0 +1,8 @@
+addr	name	evidence
+801CDD64	WPADStartFastSimpleSync	WPAD.o order: first of the 4-byte thunks after WPADInit (801CDCEC, named by kin), b WUDStartSyncSimple, as Arc Rise Fantasia's 802A9C58; here an extra li r3,1; blr sits between WPADInit and the thunks
+801CDD68	WPADStopSimpleSync	b WUDStopSyncSimple; second thunk, as ARF's 802A9C5C
+801CDD6C	WPADSetSimpleSyncCallback	third thunk, as ARF's 802A9C60
+801CDD70	WPADRegisterAllocator	b WUDRegisterAllocator; fourth thunk, as ARF's 802A9C64
+801CDD78	WPADGetStatus	b WUDGetStatus; sixth thunk (ARF's fifth, 802A9C68: here one more thunk, to 801DB924, comes before it)
+801A4A7C	KPADSetPosParam	KPAD object order: first of the 28-byte setters (stfs f1,0x84 / f2,0x88 of KPAD's 0x538-byte channel state), at ARF's KPADRead-to-KPADInit distance (ARF 8034A564, delta -0x1A5AE8 as KPADRead's and KPADInit's)
+801A4A98	KPADSetAccParam	the second setter (stfs at 0x8C, 0x90), ARF 8034A580 at the same delta
