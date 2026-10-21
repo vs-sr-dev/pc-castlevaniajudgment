@@ -2,7 +2,8 @@
 
 ## Where it stands
 
-The game boots to its menus (session 1). Not yet seen: a fight.
+The game plays (session 1): menus, the save kept, fights, fog. The click
+at stage loads is the one sound fault heard.
 
 Run (from `build/run1`, or `sh build/play.sh` from anywhere):
 
@@ -18,7 +19,8 @@ file the game created.
    anything wrong in the picture (effects, transparency, fog, the
    models' outlines), the sound, the timing and the controls.
 2. Whatever that finds. Candidates, from the other ports:
-   - fog and Z textures, still to come in wiikit;
+   - Z textures, still to come in wiikit (none reported yet);
+   - the click at stage loads (shader links? the AI interrupt?);
    - EFB copies read by the CPU (the report counts "EFB peeks": 0 so far);
    - the frame rate in fights (two models, effects, stage);
    - the Story mode's cut-scenes.
@@ -26,6 +28,7 @@ file the game created.
    buttons, guard and sub-weapon on the shoulders); the game's own button
    configuration first.
 4. Then publish: the repo `pc-castlevaniajudgment`, and the line in
-   wiikit's README port table (what it asked of wiikit: so far nothing but
-   proof that a 2008 fighter runs as it is; names by kin, if they move
-   into wiikit).
+   wiikit's README port table (what it asked of wiikit: GX fog, the
+   NAND's answer to a directory read on a file; names by kin, if they
+   move into wiikit). Until then wiikit's commits call it "a stripped 2008
+   game".

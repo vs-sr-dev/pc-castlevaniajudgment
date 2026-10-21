@@ -19,12 +19,14 @@ not here.
 
 ## Where it stands
 
-After one session **the game boots to its menus**, recompiled at the first
-try and run on wiikit as it was:
+After one session **the game plays**, recompiled at the first try; wiikit
+gained GX fog and a NAND answer the game's save check needed:
 
 - The strap screen, the logos, the opening movie (THP), the title.
 - The save file created on the NAND, the user data and name screens.
-- Picture and sound right, at 30 frames a second.
+- Picture and sound right, at 30 frames a second; the stages' fog.
+- Fights: Simon against Alucard, played by the user; scripted runs to a
+  Story fight.
 - A gamepad (or the keyboard) as the Classic Controller.
 
 See [docs/00-sessions.md](docs/00-sessions.md) and the plan in

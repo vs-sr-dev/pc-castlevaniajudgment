@@ -1,6 +1,6 @@
 # Session log
 
-## Session 1 — set up, recompiled, to the menus
+## Session 1 — set up, recompiled, played
 
 Goal: the port set up on wiikit, the executable named and recompiled, and
 as far as it would go.
@@ -24,4 +24,24 @@ Results:
   - scripted presses of the Classic (`WIIKIT_PAD`): past the title, the
     Wii system memory checked, the save file created, the user data and
     the name entry.
-* Nothing in wiikit changed.
+* **Played by the user**: Simon against Alucard, won. Sound right but for a
+  click at stage loads.
+* **Fog** (wiikit). The game fogs its stages (GX fog, linear and
+  exponential); wiikit drew none. The renderer now draws GX fog, every
+  type, perspective and orthographic, with the range adjustment, after
+  Dolphin's software renderer. Checked by two scripted runs to the same
+  fight, fog on and off: the distant ruins sink into the night's blue, the
+  fighters and the HUD unchanged.
+* **The save** (wiikit). The game asked to create its save file at every
+  boot. It tells a file from a directory as the SDK's `NANDGetType` does,
+  by reading the path as a directory: on a file IOS answers "invalid"
+  (-101), wiikit answered "no such file" (-106). Now the profile made in
+  one run is there in the next, and scripted runs reach a fight by
+  themselves (Story: Simon against Aeon).
+* **"To play this game with a Wii Remote, you must have a Nunchuk or
+  Classic Controller plug attached"**, after the title, at every boot. Not
+  a fault: a watch on the game's controller structures (`8036FB20`, 0x3CC
+  each) shows channel 1 as a Classic (type 3, from `800FBC48`'s mapping of
+  KPAD's `dev_type`) from the first second to the end, the screen
+  included. A reminder the game shows: a longplay of the console game
+  (World of Longplays) shows it too, as the user saw.
